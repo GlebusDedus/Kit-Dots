@@ -1,0 +1,12 @@
+
+import sys
+sys.stdin = open('input.txt','r')
+sys.stdout = open('output.txt','w')
+q,w,e = map(int, input().split())
+
+for i in range(5):
+    if 0<=q<=23 and  0<=w<=59 and  0<=e<=59:
+        print('YES')
+    else:
+        print('NO')
+    q,w,e = map(int, input().split())
